@@ -2,7 +2,9 @@
 
 Google Spreadsheet: https://docs.google.com/spreadsheets/d/1Mu8cAAiqexs-nCn2iukEE0VU1wDp9n_znJmyEfYXFP4/edit?usp=sharing
 
-This spreadsheet includes the running results for 8 apks, each include 5 runs with the same monkey seed. Please investigate the columns highlighted in yellow.
+This spreadsheet includes the running results for 8 apks, each including 5 runs with the same monkey seed. For each run, the targeted apk ran monkey for one hour, and the results are the bug reproduction time in each run. For example, _['1', '21']_ means in run1 of _sunflower#239.apk_, _Bug#239_ was triggered 2 times, happening at the 1st and 21st minutes of this run. 
+
+__Please investigate the columns highlighted in yellow.__
 
 ## Results for Monkey
 
@@ -11,7 +13,7 @@ Each folder in this repo includes the results for 5 runs. For each run, it will 
 * __monkey.log__: it contains the running process of each monkey action.
 * __logcat.log__: it logs the crash information during the running process.
 
-For the convenience, the reference crash_stack log of each bug is also included in the folder.
+For the convenience, the reference _crash_stack.log_ of each bug is also included in each folder.
 
 ## Check crashes of each run
 
