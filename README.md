@@ -8,14 +8,14 @@ This spreadsheet includes the running results for 8 apks, each include 5 runs wi
 
 Each folder in this repo includes the results for 5 runs. For each run, it will has 4 output files, only 2 files that need our attention:
 
-* monkey.log: it contains the running process of each monkey action.
-* logcat.log: it logs the crash information during the running process.
+* __monkey.log__: it contains the running process of each monkey action.
+* __logcat.log__: it logs the crash information during the running process.
 
-For the convenience, the crash_stack log of each bug is also included in the folder.
+For the convenience, the reference crash_stack log of each bug is also included in the folder.
 
 ## Check crashes of each run
 
-Run the check_crash.py to check the crash time in each run.
+Run the check_crash.py to check the crash time in each run (modified a little bit based on the original themis version):
 
 `python3 check_crash.py --monkey -o <folder_name> --app <app_name> --id \#<bug_id> --simple`
 
@@ -23,7 +23,9 @@ For example:
 
 `python3 check_crash.py --monkey -o sunflower --app sunflower --id \#239 --simple`
 
+It will parse the logcat.log for each run and find the crash time. According to the crash time, you can investigate the actions in monkey.log to find the potential reason for each reproduction: __Under the same monkey seed and trajectories, why some runs can reproduce the bug and others cannot?__
+
 ## Themis Benchmark
-For further detailed information about each bug, please check themis benchmark: 
+For further detailed information about each bug, please check the original themis benchmark: 
 
 https://github.com/the-themis-benchmarks/home
