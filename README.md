@@ -27,7 +27,10 @@ For example:
 
 `python3 check_crash.py --monkey -o sunflower --app sunflower --id \#239 --simple`
 
-It will parse the `logcat.log` for each run and find the crash time. According to the crash time, you can investigate the actions in `monkey.log` to find the potential reason for each reproduction: __Under the same monkey seed and trajectories, why some runs can reproduce the bug and others cannot?__
+It will parse the `logcat.log` for each run and find the crash time. According to the crash time, you can investigate the actions in `monkey.log` to find the potential reason for each reproduction: 
+
+* __Under the same monkey seed and trajectories, why some runs can reproduce the bug and others cannot?__
+* __Did any other bug happen in each run?
 
 ## Themis Benchmark
 For further detailed information about each bug, please check the original themis benchmark: 
