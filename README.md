@@ -2,7 +2,9 @@
 
 Google Spreadsheet: https://docs.google.com/spreadsheets/d/1Mu8cAAiqexs-nCn2iukEE0VU1wDp9n_znJmyEfYXFP4/edit?usp=sharing
 
-This spreadsheet includes the running results for 8 apks, each including 5 runs with the same monkey seed. For each run, the targeted apk ran monkey for one hour, and the results are the bug reproduction time in each run. For example, _['1', '21']_ means in run1 of _sunflower#239.apk_, _Bug#239_ was triggered 2 times, happening at the 1st and 21st minutes of this run. 
+This spreadsheet includes the running results for 8 apks, each including 5 runs with the same monkey seed. For each run, the targeted apk ran monkey for one hour, and the results are the bug reproduction time in each run. 
+
+For example, _['1', '21']_ means in Run1 of __sunflower#239.apk__, __Bug#239__ was triggered 2 times, happening at the 1st and 21st minutes of this run. 
 
 __Please investigate the columns highlighted in yellow.__
 
